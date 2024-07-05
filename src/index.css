@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: white;
+  background: linear-gradient(to right, #380D5C, #340533);
+}
+
+
+
+body {
+  margin-left: 16%;
+  margin-right: 16%;
+  color: white;
+  overflow: hidden;
+  /* Ensures no overflow on the body */
+  position: relative;
+  /* Ensure relative positioning for absolute elements */
+  height: 100vh;
+  overflow-y: auto;
+}
+
+@keyframes gradient-border {
+  0% {
+    border-color: #8629DA;
+  }
+
+  25% {
+    border-color: #ddbb11;
+  }
+
+  50% {
+    border-color: #1FA2FF;
+  }
+
+  75% {
+    border-color: #FFCC33;
+  }
+
+  100% {
+    border-color: #8629DA;
+  }
+}
+
+.gradient-border {
+  animation: gradient-border 8s linear infinite;
+  border-width: 3px;
+  border-style: solid;
+}
+
+
+
+
+.navgradient {
+  background: linear-gradient(to right, #5b1a8f, #340533);
+  /* Replace color codes with your desired colors */
+}
